@@ -10,7 +10,7 @@ g11:
 	bdf2psf --fb g11-uni.bdf standard.equivalents $(FONTDIR)/Lat15.256 256 g11.psf
 
 uni:
-	for fontset in $(FONTSETS); do bdf2psf --fb g11-uni.bdf $(OPTIONS)/$$fontset 512 g11$$fontset.psfu; done
+	for fontset in $(FONTSETS); do bdf2psf --fb g11-uni.bdf $(OPTIONS)/$$fontset 512 g11-$$fontset.psfu; done
 #.for fontset in $(FONTSETS)
 #	bdf2psf --fb g11u.bdf $(OPTIONS) g11-${fontset}.psfu
 #.endfor
