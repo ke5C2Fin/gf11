@@ -1,6 +1,6 @@
 # g11u
 
-Based on gohufont-uni-11.bdf Copyright 2015 by Hugo Chargois released under the terms of the [WTFPL version 2](http://www.wtfpl.net/about/)
+Based on gohufont-uni-11.bdf - Copyright 2015 by Hugo Chargois, released under the terms of the [WTFPL version 2](http://www.wtfpl.net/about/).
 
 ## build psf
 
