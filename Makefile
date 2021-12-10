@@ -1,19 +1,20 @@
 EQUIVALENTS := standard.equivalents
+DIR := /usr/share/bdf2psf
 FONTDIR := /usr/share/bdf2psf/fontsets
-FONTSETS := Uni1.512 Uni2.512 Uni3.512
+FONTSETS := $(FONTDIR)/Uni1.512+:$(FONTDIR)/Uni2.512+:$(FONTDIR)/Uni3.512+:$(DIR)/ascii.set+:$(DIR)/linux.set+:$(DIR)/useful.set
 
-OPTIONS = $(EQUIVALENTS) $(FONTDIR)
+OPTIONS = $(EQUIVALENTS) $(FONTSETS)
 
-all:	g11 g11u
+all:	pcf psf psfnouni
 
-g11:
-	bdf2psf --fb g11-uni.bdf $(OPTIONS)/Lat15.256 256 g11.psf
+pcf:
+	bdftopcf -t -o g11-uni.pcf g11-uni.bdf
 
-g11u:
-	for fontset in $(FONTSETS); do bdf2psf --fb g11-uni.bdf $(OPTIONS)/$$fontset 512 g11-$$fontset.psfu; done
-#.for fontset in $(FONTSETS)
-#	bdf2psf --fb g11u.bdf $(OPTIONS) g11-${fontset}.psfu
-#.endfor
+psf:
+	bdf2psf --fb g11u.bdf $(OPTIONS) g11.psfu
+
+psfnouni:
+	bdf2psf --fb g11-uni.bdf $(EQUIVALENTS) $(FONTDIR)/Lat15.256 256 g11.psf
 
 clean:
-	rm -f *.psf *.psfu
+	rm -f *.pcf *.psf *.psfu
