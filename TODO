@@ -1,3 +1,6 @@
+rebase standards.equivalents
+merge upstream PRs
+
 #WARNING: U+21B5: no glyph defined
 #WARNING: U+20AE: no glyph defined
 #WARNING: U+060C: no glyph defined
