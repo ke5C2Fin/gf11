@@ -11,7 +11,7 @@ pcf: g11-uni.bdf
 	bdftopcf -t -o g11-uni.pcf g11-uni.bdf
 
 psf: g11-uni.bdf
-	bdf2psf --fb g11-uni.bdf $(OPTIONS) g11.psfu
+	bdf2psf --fb g11-uni.bdf $(OPTIONS) 512 g11.psfu
 
 psfnouni: g11-uni.bdf
 	bdf2psf --fb g11-uni.bdf $(EQUIVALENTS) $(FONTDIR)/Lat15.256 256 g11.psf
