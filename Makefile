@@ -7,13 +7,13 @@ OPTIONS = $(EQUIVALENTS) $(FONTSETS)
 
 all:	pcf psf psfnouni
 
-pcf:
+pcf: g11-uni.bdf
 	bdftopcf -t -o g11-uni.pcf g11-uni.bdf
 
-psf:
-	bdf2psf --fb g11u.bdf $(OPTIONS) g11.psfu
+psf: g11-uni.bdf
+	bdf2psf --fb g11-uni.bdf $(OPTIONS) g11.psfu
 
-psfnouni:
+psfnouni: g11-uni.bdf
 	bdf2psf --fb g11-uni.bdf $(EQUIVALENTS) $(FONTDIR)/Lat15.256 256 g11.psf
 
 clean:
