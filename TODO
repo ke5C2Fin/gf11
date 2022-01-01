@@ -1,11 +1,7 @@
-rebase standards.equivalents
-merge upstream PRs
-
-#WARNING: U+21B5: no glyph defined
-#WARNING: U+20AE: no glyph defined
-#WARNING: U+060C: no glyph defined
-#WARNING: U+061B: no glyph defined
-#WARNING: U+061F: no glyph defined
+lambda
+number sign
+braille
+arabic
 WARNING: U+0621: no glyph defined
 WARNING: U+0622: no glyph defined
 WARNING: U+0623: no glyph defined
@@ -51,51 +47,3 @@ WARNING: U+064F: no glyph defined
 WARNING: U+0650: no glyph defined
 WARNING: U+0651: no glyph defined
 WARNING: U+0652: no glyph defined
-#WARNING: U+0400: no glyph defined
-#WARNING: U+040D: no glyph defined
-#WARNING: U+0450: no glyph defined
-#WARNING: U+045D: no glyph defined
-#WARNING: U+0494: no glyph defined
-#WARNING: U+0495: no glyph defined
-#WARNING: U+0498: no glyph defined
-#WARNING: U+0499: no glyph defined
-#WARNING: U+049C: no glyph defined
-#WARNING: U+049D: no glyph defined
-#WARNING: U+049E: no glyph defined
-#WARNING: U+049F: no glyph defined
-#WARNING: U+04A0: no glyph defined
-#WARNING: U+04A1: no glyph defined
-#WARNING: U+04A2: no glyph defined
-#WARNING: U+04A3: no glyph defined
-#WARNING: U+04A4: no glyph defined
-#WARNING: U+04A5: no glyph defined
-#WARNING: U+04A6: no glyph defined
-#WARNING: U+04A7: no glyph defined
-#WARNING: U+04A8: no glyph defined
-#WARNING: U+04A9: no glyph defined
-#WARNING: U+04AA: no glyph defined
-#WARNING: U+04AB: no glyph defined
-#WARNING: U+04AC: no glyph defined
-#WARNING: U+04AD: no glyph defined
-#WARNING: U+04B4: no glyph defined
-#WARNING: U+04B5: no glyph defined
-#WARNING: U+04B6: no glyph defined
-#WARNING: U+04B7: no glyph defined
-#WARNING: U+04B8: no glyph defined
-#WARNING: U+04B9: no glyph defined
-#WARNING: U+04BC: no glyph defined
-#WARNING: U+04BD: no glyph defined
-#WARNING: U+04BE: no glyph defined
-#WARNING: U+04BF: no glyph defined
-#WARNING: U+04D2: no glyph defined
-#WARNING: U+04D3: no glyph defined
-#WARNING: U+04D6: no glyph defined
-#WARNING: U+04D7: no glyph defined
-#WARNING: U+04E6: no glyph defined
-#WARNING: U+04E7: no glyph defined
-#WARNING: U+04F0: no glyph defined
-#WARNING: U+04F1: no glyph defined
-#WARNING: U+04F2: no glyph defined
-#WARNING: U+04F3: no glyph defined
-#WARNING: U+04F8: no glyph defined
-#WARNING: U+04F9: no glyph defined
