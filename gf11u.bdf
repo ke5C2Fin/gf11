@@ -2,12 +2,12 @@ STARTFONT 2.1
 COMMENT "Copyright 2015-2017, Hugo Chargois"
 COMMENT "Copyright 2018-2021, Kevin Harrington"
 COMMENT "Licensed under the WTFPL"
-FONT -misc-gohufont-medium-r-normal--11-80-75-75-c-60-iso10646-1
+FONT -misc-gf-medium-r-normal--11-80-75-75-c-60-iso10646-1
 SIZE 11 75 75
 FONTBOUNDINGBOX 6 11 0 -2
 STARTPROPERTIES 28
 FOUNDRY "misc"
-FAMILY_NAME "gohufont"
+FAMILY_NAME "gf"
 WEIGHT_NAME "medium"
 SLANT "r"
 SETWIDTH_NAME "normal"
@@ -19,8 +19,8 @@ SPACING "c"
 AVERAGE_WIDTH 60
 CHARSET_REGISTRY "iso10646"
 CHARSET_ENCODING "1"
-FONT_NAME "gohufont"
-FACE_NAME "gohufont"
+FONT_NAME "gf11u"
+FACE_NAME "gf11u"
 FONT_VERSION "003.000"
 FONT_ASCENT 9
 FONT_DESCENT 2
