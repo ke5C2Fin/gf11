@@ -1,7 +1,8 @@
 STARTFONT 2.1
 COMMENT "Copyright 2015-2017, Hugo Chargois"
-COMMENT "Copyright 2018-2021, Kevin Harrington"
 COMMENT "Licensed under the WTFPL"
+COMMENT "Copyright 2018-2021, Kevin Harrington"
+COMMENT "Licensed under the MIT License"
 FONT -misc-gf-medium-r-normal--11-80-75-75-c-60-iso10646-1
 SIZE 11 75 75
 FONTBOUNDINGBOX 6 11 0 -2
