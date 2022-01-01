@@ -1,12 +1,9 @@
 # g11u
 
-Based on gohufont-uni-11.bdf - Copyright 2015 by Hugo Chargois,
-released under the terms of the [WTFPL version 2](http://www.wtfpl.net/about/).
+Based on 11px unicode version of [GohuFont](https://github.com/hchargois/gohufont)
 
-https://www.pentacom.jp/pentacom/bitfontmaker2/ 
+Some more glyphs added, some minor changes to existing glyphs
 
-## build psf
-
-```
-bdf2psf --fb g11-uni.bdf /usr/share/bdf2psf/standard.equivalents /usr/share/bdf2psf/fontsets/Lat15.256 256 g11.psf
-```
+## uses
+* bdf2psf from debian console-setup
+* bdftopcf from xfonts-utils
