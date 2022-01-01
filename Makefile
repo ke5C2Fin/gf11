@@ -11,7 +11,7 @@ pcf: gf11u.bdf
 	bdftopcf -t -o gf11u.pcf gf11u.bdf
 
 psf: gf11u.bdf
-	bdf2psf --fb gf11u.bdf $(OPTIONS) 512 gf11u.psfu
+	bdf2psf --fb gf11u.bdf $(OPTIONS) 512 gf11u.psf
 
 psfnouni: gf11u.bdf
 	bdf2psf --fb gf11u.bdf $(EQUIVALENTS) $(FONTDIR)/Lat15.256 256 gf11.psf
@@ -19,5 +19,5 @@ psfnouni: gf11u.bdf
 #install:
 
 clean:
-	rm -f *.pcf *.psf *.psfu
+	rm -f *.pcf *.psf
 
