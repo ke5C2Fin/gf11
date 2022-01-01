@@ -1,20 +1,20 @@
 EQUIVALENTS := standard.equivalents
 DIR := /usr/share/bdf2psf
 FONTDIR := /usr/share/bdf2psf/fontsets
-FONTSETS := $(FONTDIR)/Uni1.512+:$(FONTDIR)/Uni2.512+:$(FONTDIR)/Uni3.512+:$(DIR)/ascii.set+:$(DIR)/linux.set+:$(DIR)/useful.set
+FONTSETS := $(FONTDIR)/Uni1.512+:$(FONTDIR)/Uni2.512+:$(FONTDIR)/Uni3.512+:$(DIR)/ascii.set+:$(DIR)/linux.set+:$(DIR)/useful.set+:$(DIR)/freebsd.set
 
 OPTIONS = $(EQUIVALENTS) $(FONTSETS)
 
-all:	pcf psf psfnouni
+all: pcf psf psfnouni
 
-pcf: g11-uni.bdf
-	bdftopcf -t -o g11-uni.pcf g11-uni.bdf
+pcf: gf11u.bdf
+	bdftopcf -t -o gf11u.pcf gf11u.bdf
 
-psf: g11-uni.bdf
-	bdf2psf --fb g11-uni.bdf $(OPTIONS) 512 g11.psfu
+psf: gf11u.bdf
+	bdf2psf --fb gf11u.bdf $(OPTIONS) 512 gf11u.psfu
 
-psfnouni: g11-uni.bdf
-	bdf2psf --fb g11-uni.bdf $(EQUIVALENTS) $(FONTDIR)/Lat15.256 256 g11.psf
+psfnouni: gf11u.bdf
+	bdf2psf --fb gf11u.bdf $(EQUIVALENTS) $(FONTDIR)/Lat15.256 256 gf11.psf
 
 clean:
 	rm -f *.pcf *.psf *.psfu
