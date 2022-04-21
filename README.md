@@ -10,3 +10,4 @@ Some more glyphs added, some minor changes to existing glyphs
 
 ### on Linux
 `setfont gf11u.psf`
+`ln -s ${PWD}/gf11u.pcf /usr/share/fonts/bitmap/`

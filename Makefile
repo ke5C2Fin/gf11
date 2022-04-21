@@ -16,7 +16,9 @@ psf: gf11u.bdf
 psfnouni: gf11.bdf
 	bdf2psf --fb gf11.bdf $(EQUIVALENTS) $(FONTDIR)/Lat15.256 256 gf11.psf
 
+# need to break out gf11u.pcf into a variable
 #install:
+	#ln -s ${PWD}/gf11u.pcf /usr/share/fonts/bitmap/
 
 clean:
 	rm -f *.pcf *.psf *.psfu
