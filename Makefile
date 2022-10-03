@@ -23,3 +23,4 @@ psfnouni: gf11.bdf
 clean:
 	rm -f *.pcf *.psf *.psfu
 
+.PHONY: all pcf psf psfnouni clean
