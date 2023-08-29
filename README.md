@@ -9,5 +9,7 @@ Some more glyphs added, some minor changes to existing glyphs
 * bdftopcf
 
 ### on Linux
-`setfont gf11u.psf`
-`ln -s ${PWD}/gf11u.pcf /usr/share/fonts/bitmap/`
+```
+setfont gf11u.psf
+ln -s ${PWD}/gf11u.pcf /usr/share/fonts/bitmap/
+```
