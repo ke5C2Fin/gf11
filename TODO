@@ -3,7 +3,8 @@ number sign
 braille
 arabic
 more arrows
-https://packages.debian.org/cs/sid/console-setup 1.210
+more ISO/IEC 8859
+https://packages.debian.org/cs/sid/console-setup 1.240
 WARNING: U+0621: no glyph defined
 WARNING: U+0622: no glyph defined
 WARNING: U+0623: no glyph defined
