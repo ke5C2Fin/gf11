@@ -1,7 +1,14 @@
 EQUIVALENTS := standard.equivalents
 DIR := /usr/share/bdf2psf
 FONTDIR := /usr/share/bdf2psf/fontsets
-FONTSETS := $(FONTDIR)/Uni1.512+:$(FONTDIR)/Uni2.512+:$(FONTDIR)/Uni3.512+:$(DIR)/ascii.set+:$(DIR)/linux.set+:$(DIR)/useful.set+:$(DIR)/freebsd.set
+FONTSETS := \
+	$(FONTDIR)/Uni1.512+ \
+	$(FONTDIR)/Uni2.512+ \
+	$(FONTDIR)/Uni3.512+ \
+	$(DIR)/ascii.set+ \
+	$(DIR)/linux.set+ \
+	$(DIR)/useful.set+ \
+	$(DIR)/freebsd.set
 
 OPTIONS = $(EQUIVALENTS) $(FONTSETS)
 
@@ -16,11 +23,17 @@ psf: gf11u.bdf
 psfnouni: gf11.bdf
 	bdf2psf --fb gf11.bdf $(EQUIVALENTS) $(FONTDIR)/Lat15.256 256 gf11.psf
 
-# need to break out gf11u.pcf into a variable
-#install:
-	#ln -s ${PWD}/gf11u.pcf /usr/share/fonts/bitmap/
+install: gf11u.pcf
+	mkdir -p /usr/share/fonts/gf11
+	ln -sf $(abspath $<) /usr/share/fonts/gf11/gf11u.pcf
+	fc-cache
+
+install_local: gf11u.pcf
+	mkdir -p ~/.fonts
+	ln -sf $(abspath $<) ~/.fonts/gf11u.pcf
+	fc-cache -f ~/.fonts
 
 clean:
 	rm -f *.pcf *.psf *.psfu
 
-.PHONY: all pcf psf psfnouni clean
+.PHONY: all pcf psf psfnouni install install_local clean
