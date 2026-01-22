@@ -12,15 +12,15 @@ FONTSETS := \
 
 OPTIONS = $(EQUIVALENTS) $(FONTSETS)
 
-all: pcf psf psfnouni
+all: gf11u.pcf gf11u.psf gf11.psf
 
-pcf: gf11u.bdf
+gf11u.pcf: gf11u.bdf
 	bdftopcf -t -o gf11u.pcf gf11u.bdf
 
-psf: gf11u.bdf
+gf11u.psfu: gf11u.bdf
 	bdf2psf --fb gf11u.bdf $(OPTIONS) 512 gf11u.psfu
 
-psfnouni: gf11.bdf
+gf11.psf: gf11.bdf
 	bdf2psf --fb gf11.bdf $(EQUIVALENTS) $(FONTDIR)/Lat15.256 256 gf11.psf
 
 install: gf11u.pcf
@@ -36,4 +36,4 @@ install_local: gf11u.pcf
 clean:
 	rm -f *.pcf *.psf *.psfu
 
-.PHONY: all pcf psf psfnouni install install_local clean
+.PHONY: all gf11u.pcf gf11u.psfu gf11.psf install install_local clean
