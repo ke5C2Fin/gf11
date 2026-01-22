@@ -12,23 +12,23 @@ FONTSETS := \
 
 OPTIONS = $(EQUIVALENTS) $(FONTSETS)
 
-all: gf11u.pcf gf11u.psf gf11.psf
+all: pcf psfu psf
 
-gf11u.pcf: gf11u.bdf
+pcf: gf11u.bdf
 	bdftopcf -t -o gf11u.pcf gf11u.bdf
 
-gf11u.psfu: gf11u.bdf
+psfu: gf11u.bdf
 	bdf2psf --fb gf11u.bdf $(OPTIONS) 512 gf11u.psfu
 
-gf11.psf: gf11.bdf
+psf: gf11.bdf
 	bdf2psf --fb gf11.bdf $(EQUIVALENTS) $(FONTDIR)/Lat15.256 256 gf11.psf
 
-install: gf11u.pcf
+install: pcf
 	mkdir -p /usr/share/fonts/gf11
 	ln -sf $(abspath $<) /usr/share/fonts/gf11/gf11u.pcf
 	fc-cache
 
-install_local: gf11u.pcf
+install_local: pcf
 	mkdir -p ~/.fonts
 	ln -sf $(abspath $<) ~/.fonts/gf11u.pcf
 	fc-cache -f ~/.fonts
